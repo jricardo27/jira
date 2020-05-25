@@ -1207,7 +1207,7 @@ class JIRA(object):
 
         result = {}
         for user in r["users"]["items"]:
-            result[user['id']] = {
+            result[user['accountId']] = {
                 'name': user.get('name'),
                 'id': user.get('id'),
                 'accountId': user.get('accountId'),
